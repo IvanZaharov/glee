@@ -1,15 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Glee | Home page</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
-  
 
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="logo header__logo" href="#">
+          <img class="logo__img" src="images/logo.png" alt="logo">
+        </a>
+
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Home +</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">About</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Services</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Pages +</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">News</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="user-nav">
+          <a class="user-nav__link user-nav__link--search" href="#"></a>
+          <div class="user-nav__items">
+            <a class="user-nav__link user-nav__link--heart" href="#">
+              <span class="user-nav__num">0</span>
+            </a>
+            <a class="user-nav__link user-nav__link--cart" href="#">
+              <span class="user-nav__num">0</span>
+            </a>
+          </div>
+          <a class="user-nav__link user-nav__link--user" href="#"></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="info">
+      <div class="container">
+        <div class="info-slider">
+          <div class="info-slider__item">
+            <div class="info__container">
+              <h1 class="info-slider__title">
+                SMART AND TRENDY
+              </h1>
+              <p class="info-slider__text">
+                Dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt
+              </p>
+              <a class="info-slider__link" href="#">Shop Now</a>
+            </div>
+          </div>
+
+          <div class="info-slider__item">
+            <div class="info__container">
+              <h1 class="info-slider__title">
+                SMART AND TRENDY
+              </h1>
+              <p class="info-slider__text">
+                Dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt
+              </p>
+              <a class="info-slider__link" href="#">Shop Now</a>
+            </div>
+          </div>
+
+          <div class="info-slider__item">
+            <div class="info__container">
+              <h1 class="info-slider__title">
+                SMART AND TRENDY
+              </h1>
+              <p class="info-slider__text">
+                Dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt
+              </p>
+              <a class="info-slider__link" href="#">Shop Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="info__items">
+          <div class="info__item">
+            <div class="info__box info__box--support">
+              <h3 class="info__title">Support 24/7.</h3>
+              <p class="info__text">
+                Contact us 24 hours a day, 7 days a week.
+              </p>
+            </div>
+          </div>
+
+          <div class="info__item">
+            <div class="info__box info__box--delivery">
+              <h3 class="info__title">Delivery.</h3>
+              <p class="info__text">
+                Free shipping on all US order.
+              </p>
+            </div>
+          </div>
+
+          <div class="info__item">
+            <div class="info__box info__box--secure">
+              <h3 class="info__title">100% Payment secure.</h3>
+              <p class="info__text">
+                We ensure secure payment with PEV.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products">
+      <div class="products__container">
+        <h2 class="products__title">Products of the week</h2>
+
+        <div class="products__btns">
+          <button class="products__btn" type="button" data-filter="all">All</button>
+          <button class="products__btn" type="button" data-filter=".category-a">Furnitures</button>
+          <button class="products__btn" type="button" data-filter=".category-b">Chairs</button>
+          <button class="products__btn" type="button" data-filter=".category-c">Lighting</button>
+          <button class="products__btn" type="button" data-filter=".category-d">Decor</button>
+        </div>
+
+        <div class="products__items">
+          <div class="products__item mix category-a">
+            <img class="products__img" src="images/products/product-1.png" alt="Wooden radio">
+            <h4 class="products__name">Wooden radio</h4>
+            <span class="products__cost">$29.00</span>
+            <a class="products__link products__link--search" href="#"></a>
+            <a class="products__link products__link--cart" href="#"></a>
+            <a class="products__link products__link--like" href="#"></a>
+          </div>
+
+          <div class="products__item mix category-a">
+            <img class="products__img" src="images/products/product-2.png" alt="Wooden chair">
+            <h4 class="products__name">Wooden chair</h4>
+            <span class="products__cost">$29.00</span>
+            <a class="products__link products__link--search" href="#"></a>
+            <a class="products__link products__link--cart" href="#"></a>
+            <a class="products__link products__link--like" href="#"></a>
+          </div>
+
+          <div class="products__item mix category-a">
+            <img class="products__img" src="images/products/product-3.png" alt="White chair">
+            <h4 class="products__name">White chair</h4>
+            <span class="products__cost">$29.00</span>
+            <a class="products__link products__link--search" href="#"></a>
+            <a class="products__link products__link--cart" href="#"></a>
+            <a class="products__link products__link--like" href="#"></a>
+          </div>
+
+          <div class="products__item mix category-b">
+            <img class="products__img" src="images/products/product-4.png" alt="Retro table">
+            <h4 class="products__name">Retro table</h4>
+            <span class="products__cost">$29.00</span>
+            <a class="products__link products__link--search" href="#"></a>
+            <a class="products__link products__link--cart" href="#"></a>
+            <a class="products__link products__link--like" href="#"></a>
+          </div>
+
+          <div class="products__item mix category-b">
+            <img class="products__img" src="images/products/product-5.png" alt="Wooden radio">
+            <h4 class="products__name">Wooden radio</h4>
+            <span class="products__cost">$29.00</span>
+            <a class="products__link products__link--search" href="#"></a>
+            <a class="products__link products__link--cart" href="#"></a>
+            <a class="products__link products__link--like" href="#"></a>
+          </div>
+
+          <div class="products__item mix category-c">
+            <img class="products__img" src="images/products/product-6.png" alt="Wooden chair">
+            <h4 class="products__name">Wooden chair</h4>
+            <span class="products__cost">$29.00</span>
+            <a class="products__link products__link--search" href="#"></a>
+            <a class="products__link products__link--cart" href="#"></a>
+            <a class="products__link products__link--like" href="#"></a>
+          </div>
+
+          <div class="products__item mix category-c">
+            <img class="products__img" src="images/products/product-7.png" alt="White chair">
+            <h4 class="products__name">White chair</h4>
+            <span class="products__cost">$29.00</span>
+            <a class="products__link products__link--search" href="#"></a>
+            <a class="products__link products__link--cart" href="#"></a>
+            <a class="products__link products__link--like" href="#"></a>
+          </div>
+
+          <div class="products__item mix category-d">
+            <img class="products__img" src="images/products/product-8.png" alt="Retro table">
+            <h4 class="products__name">Retro table</h4>
+            <span class="products__cost">$29.00</span>
+            <a class="products__link products__link--search" href="#"></a>
+            <a class="products__link products__link--cart" href="#"></a>
+            <a class="products__link products__link--like" href="#"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer-top">
+        <div class="footer-top__items">
+          <div class="footer-top__item">
+            <a class="logo footer__logo" href="#">
+              <img class="logo__img" src="images/logo.png" alt="">
+            </a>
+            <address class="contacts">
+              <div class="contacts__item">
+                <p>ADDRESS: 4772 Wines Lane</p>
+                <p>Houston, TX 77032</p>
+              </div>
+              <div class="contacts__item">
+                <span class="contacts__text">Telephone:</span>
+                <a class="contacts__phone" href="tel:+8323475843">+832-347-5843</a>
+              </div>
+              <div class="contacts__item">
+                <span class="contacts__text">Email:</span>
+                <a class="contacts__email" href="emailto:contact@Glee.com">contact@Glee.com</a>
+              </div>
+            </address>
+
+          </div>
+
+          <div class="footer-top__item">
+            <h5 class="footer-top__title">Services</h5>
+            <ul class="footer-top__list">
+              <li class="footer-top__list-item">
+                <a class="footer-top__list-link" href="#">About us</a>
+              </li>
+              <li class="footer-top__list-item">
+                <a class="footer-top__list-link" href="#">Return Policy</a>
+              </li>
+              <li class="footer-top__list-item">
+                <a class="footer-top__list-link" href="#">Our Blog</a>
+              </li>
+              <li class="footer-top__list-item">
+                <a class="footer-top__list-link" href="#">Contact Us</a>
+              </li>
+              <li class="footer-top__list-item">
+                <a class="footer-top__list-link" href="#">Terms & Condition</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-top__item">
+            <h5 class="footer-top__title">Account</h5>
+            <ul class="footer-top__list">
+              <li class="footer-top__list-item">
+                <a class="footer-top__list-link" href="#">Your Account</a>
+              </li>
+              <li class="footer-top__list-item">
+                <a class="footer-top__list-link" href="#">Checkout</a>
+              </li>
+              <li class="footer-top__list-item">
+                <a class="footer-top__list-link" href="#">Login</a>
+              </li>
+              <li class="footer-top__list-item">
+                <a class="footer-top__list-link" href="#">Register</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-top__item">
+            <h5 class="footer-top__title">newsletter</h5>
+            <p class="footer-top__text">
+              Subscribe by our newsletter and get update protidin.
+            </p>
+            <form class="footer-top__form">
+              <label for="email"></label>
+              <input class="footer-top__input" name="email" type="email" placeholder="Email address">
+              <button class="footer-top__btn" type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom__inner">
+          <p class="footer-bottom__copy">
+            ©2020 CopyRight Example. All rights reserved.
+          </p>
+
+          <ul class="footer-bottom__menu">
+            <li class="footer-bottom__item">
+              <a class="footer-bottom__link" href="#">Home</a>
+            </li>
+            <li class="footer-bottom__item">
+              <a class="footer-bottom__link" href="#">About</a>
+            </li>
+            <li class="footer-bottom__item">
+              <a class="footer-bottom__link" href="#">Blog</a>
+            </li>
+            <li class="footer-bottom__item">
+              <a class="footer-bottom__link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
+
 </html>

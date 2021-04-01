@@ -1,0 +1,27 @@
+.video-popup {
+  background-repeat: no-repeat;
+  min-height: 501px;
+  position: relative;
+
+  
+  &__link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url('../images/video-play.png');
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: 127px;
+      height: 127px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

@@ -1,0 +1,132 @@
+.insights-articles {
+  padding: 117px 0 0;
+  
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 46px;
+  }
+
+  &__title {
+    text-align-last: left;
+    margin-bottom: 0;
+    line-height: 1;
+  }
+
+  &__link {
+    line-height: 1;
+    color: #262626;
+    @extend %dmsans-700;
+    padding-right: 26px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      background-image: url('../images/insights-articles-arrow.png');
+      background-repeat: no-repeat;
+      width: 7px;
+      height: 12px;
+      right: 0;
+      top: 1px;
+    }
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    max-width: 370px;
+    width: 100%;
+    background-color: #fff;
+    min-height: 420px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 315px;
+      height: 1px;
+      background-color: #e0e0e0;
+      bottom: 59px;
+      left: 28px;
+    }
+  }
+
+  &__img {
+    height: 250px;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 32px;
+  }
+
+  &__news {
+    position: absolute;
+    bottom: -15px;
+    left: 28px;
+    color: #fff;
+    text-transform: uppercase;
+    display: block;
+    max-width: 103px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.4;
+    padding: 6px 0;
+    background-color: #a3bbc8;
+    text-align: center;
+    border-radius: 100px;
+    @extend %poppins-700;
+  }
+
+  &__item-link {
+    padding: 0 32px;
+    font-size: 18px;
+    line-height: 1.2;
+    @extend %dmsans-500;
+    color: #262626;
+  }
+
+  &__info {
+    position: absolute;
+    bottom: 0;
+    padding: 0 32px 28px;
+    text-transform: uppercase;
+    line-height: 1;
+    font-size: 12px;
+    color: #222933;
+    @extend %rubik-400;
+    margin-right: 31px;
+  }
+  
+  &__date {
+    color: #262626;
+    margin-right: 31px;
+  }
+
+  &__admin {
+    color: #262626;
+  }
+
+
+  &__partners {
+    background-color: #fef7f0;
+    height: 436px;
+    margin-top: -170px;
+    padding-top: 264px;
+  }
+
+  &__partner {
+    height: 84px;
+    width: 167px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+ 
+}

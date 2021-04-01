@@ -1,0 +1,103 @@
+.info-slider {
+  &__item {
+    display: flex !important;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 217px 300px 279px;
+    background-color: #fcd7b6;
+    position: relative;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    color: #243f4d;
+    font-size: 72px;
+    line-height: 1;
+    margin-bottom: 24px;
+    max-width: 470px;
+    @extend %rubik-500;
+    -webkit-line-clamp: 2; /* Число отображаемых строк */
+    display: -webkit-box; /* Включаем флексбоксы */
+    -webkit-box-orient: vertical; /* Вертикальная ориентация */
+    overflow: hidden;
+  }
+
+  &__text {
+    color: #436372;
+    max-width: 390px;
+    @extend %rubik-400;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 36px;
+    p {
+      -webkit-line-clamp: 2;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+
+  &__link {
+    display: block;
+    max-width: 200px;
+    width: 100%;
+    background-color: #a3bbc8;
+    font-size: 15px;
+    line-height: 1;
+    padding: 25px 27px 20px;
+    color: #fff;
+    @extend %rubik-500;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    position: relative;
+    &:hover {
+      background-color: #8499a5;
+    }
+
+    &:active {
+      background-color: #000;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url('../images/arrow-right.png');
+      background-repeat: no-repeat;
+      width: 22px;
+      height: 9px;
+      right: 19px;
+    }
+  }
+
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 45px;
+  right: 50%;
+  transform: translateX(50%);
+  li:not(:last-child) {
+    margin-right: 12px;
+  }
+
+  button {
+    padding: 0;
+    border: none;
+    background-color: #fff;
+    font-size: 11px;
+    line-height: 1;
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    @extend %rubik-500;
+    opacity: 0.5;
+  }
+}
+
+.slick-active button {
+  opacity: 1;
+}

@@ -18,15 +18,31 @@ body {
   max-width: 1800px;
   margin: 0 auto;
   padding: 0 15px;
+
+  &--sm {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
 }
 
-.footer__container {
-  max-width: 1200px;
+.title {
+  font-size: 36px;
+  color: #191919;
+  text-align: center;
+  @extend %dmsans-700;
+  margin-bottom: 9px;
 }
 
-.info__container,
-.products__container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

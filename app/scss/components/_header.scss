@@ -9,6 +9,8 @@
   &__logo {
     margin-right: 140px;
     max-width: 146px;
+    height: 39px;
+    overflow: hidden;
   }
 }
 
@@ -31,6 +33,7 @@
 
     &:hover {
       color: #000;
+      text-decoration: underline;
     }
   }
 }
@@ -45,30 +48,47 @@
     margin-right: 20px;
     border-radius: 50%;
     position: relative;
+    background-color: #edf1f4;
+
+    &:hover {
+      background-color: #a3bbc8;
+      
+    }
+
+    &:active {
+      background-color: #6b818d;
+    }
   }
 
   &__link--search {
     background-image: url('../images/search.png');
-    background-color: #edf1f4;
   }
 
   &__link--heart {
     background-image: url('../images/heart.png');
-    background-position: center center;
-    transform: translateY(10%);
+    background-position: 60% 63%;
+    background-color: transparent;
+    width: 100%;
+    margin-right: 0;
+    &:hover {
+      background-color: transparent;
+    }
      
   }
 
   &__link--cart {
     background-image: url('../images/cart.png');
     margin-right: 0;
-    background-position: center center;
-    transform: translateY(10%);
+    background-position: 45% 63%;
+    background-color: transparent;
+    width: 100%;
+    &:hover {
+      background-color: transparent;
+    }
   }
 
   &__link--user {
     background-image: url('../images/user.png');
-    background-color: #a3bbc8;
     margin-right: 0;
   }
 
@@ -78,7 +98,6 @@
     margin-right: 20px;
     border-radius: 100px;
     width: 178px;
-    padding: 0 25px;
     justify-content: space-around;
     position: relative;
 
@@ -103,8 +122,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 10px;
-    right: 6px;
+    top: 12px;
+    right: 19px;
     @extend %dmsans-400;
+
+    &--r {
+      right: 30px;
+    }
   }
 }

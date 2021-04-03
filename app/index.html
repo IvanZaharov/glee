@@ -51,7 +51,7 @@
             </a>
             <a class="user-nav__link user-nav__link--cart" href="#">
               <span class="sr-only">cart</span>
-              <span class="user-nav__num">0</span>
+              <span class="user-nav__num user-nav__num--r">0</span>
             </a>
           </div>
           <a class="user-nav__link user-nav__link--user" href="#">
@@ -252,7 +252,7 @@
           </div>
 
           <div class="products__inner-item">
-            <img class="products__inner-img" src="images/products/product-10.png" alt="Malesuada Tempor Euismod">
+            <img class="products__inner-img products__inner-img--r" src="images/products/product-10.png" alt="Malesuada Tempor Euismod">
             <div class="products__box">
               <h4 class="products__box-title">Malesuada Tempor Euismod</h4>
               <div class="products__box-text">
@@ -338,8 +338,8 @@
         <div class="insights-articles__items">
           <div class="insights-articles__item">
             <div class="insights-articles__img" style="background-image: url(images/insights-articles-1.jpg);">
-              <span class="insights-articles__news">news</span>
             </div>
+            <span class="insights-articles__news">news</span>
             <a class="insights-articles__item-link" href="#">
                 Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
             </a>
@@ -351,8 +351,8 @@
 
           <div class="insights-articles__item">
             <div class="insights-articles__img" style="background-image: url(images/insights-articles-2.jpg);">
-              <span class="insights-articles__news">news</span>
             </div>
+            <span class="insights-articles__news">news</span>
             <a class="insights-articles__item-link" href="#">
                 Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore 
             </a>
@@ -364,8 +364,8 @@
 
           <div class="insights-articles__item">
             <div class="insights-articles__img" style="background-image: url(images/insights-articles-3.jpg);">
-              <span class="insights-articles__news">news</span>
             </div>
+            <span class="insights-articles__news">news</span>
             <a class="insights-articles__item-link" href="#">
                 Rncididunt ut labore et dolore magna aliqua. Ut enim 
             </a>
@@ -423,56 +423,58 @@
 
           </div>
 
-          <div class="footer__item">
-            <span class="footer__title">Services</span>
-            <ul class="footer__list">
-              <li class="footer__list-item">
-                <a class="footer__list-link" href="#">About us</a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__list-link" href="#">Return Policy</a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__list-link" href="#">Our Blog</a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__list-link" href="#">Contact Us</a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__list-link" href="#">Terms & Condition</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="footer__item">
-            <span class="footer__title">Account</span>
-            <ul class="footer__list">
-              <li class="footer__list-item">
-                <a class="footer__list-link" href="#">Your Account</a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__list-link" href="#">Checkout</a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__list-link" href="#">Login</a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__list-link" href="#">Register</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="footer__item">
-            <span class="footer__title">newsletter</span>
-            <div class="footer__text">
-              <p>Subscribe by our newsletter and get update protidin.</p>
+          <div class="footer__box">
+            <div class="footer__item">
+              <span class="footer__title">Services</span>
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a class="footer__list-link" href="#">About us</a>
+                </li>
+                <li class="footer__list-item">
+                  <a class="footer__list-link" href="#">Return Policy</a>
+                </li>
+                <li class="footer__list-item">
+                  <a class="footer__list-link" href="#">Our Blog</a>
+                </li>
+                <li class="footer__list-item">
+                  <a class="footer__list-link" href="#">Contact Us</a>
+                </li>
+                <li class="footer__list-item">
+                  <a class="footer__list-link" href="#">Terms & Condition</a>
+                </li>
+              </ul>
             </div>
-            <form class="subscribe">
-              <label class="subscribe__label" for="email"></label>
-              <span class="sr-only">Email address</span>
-              <input id="email" class="subscribe__input" name="email" type="email" placeholder="Email address" required>
-              <button class="subscribe__btn" type="submit">Subscribe</button>
-            </form>
+  
+            <div class="footer__item">
+              <span class="footer__title">Account</span>
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a class="footer__list-link" href="#">Your Account</a>
+                </li>
+                <li class="footer__list-item">
+                  <a class="footer__list-link" href="#">Checkout</a>
+                </li>
+                <li class="footer__list-item">
+                  <a class="footer__list-link" href="#">Login</a>
+                </li>
+                <li class="footer__list-item">
+                  <a class="footer__list-link" href="#">Register</a>
+                </li>
+              </ul>
+            </div>
+  
+            <div class="footer__item">
+              <span class="footer__title">newsletter</span>
+              <div class="footer__text">
+                <p>Subscribe by our newsletter and get update protidin.</p>
+              </div>
+              <form class="subscribe">
+                <label class="subscribe__label" for="email"></label>
+                <span class="sr-only">Email address</span>
+                <input id="email" class="subscribe__input" name="email" type="email" placeholder="Email address" required>
+                <button class="subscribe__btn" type="submit">Subscribe</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>

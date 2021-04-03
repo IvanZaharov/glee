@@ -18,7 +18,7 @@
 }
 
 .products {
-  padding: 52px 0 100px;
+  padding: 52px 0 83px;
   &__title {
     font-size: 36px;
     color: #191919;
@@ -54,6 +54,9 @@
   &__img {
     margin: 0 auto;
     padding-bottom: 65px;
+
+    overflow: hidden;
+    
   }
   
   &__name {
@@ -95,6 +98,11 @@
 
     &:hover::before {
       transform: scale(1.25);
+      
+    }
+
+    &:active::before {
+      background-color: #aed0e2;
     }
 
     &--search::before {
@@ -127,10 +135,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+
+    &:last-child {
+      padding-left: 50px;
+    }
   }
 
   &__inner-img {
-    margin: -100px 20px 85px 0;
+    margin: -100px 0 85px;
+    margin-right: 19px;
+    max-width: 240px;
+    height: 416px;
+    overflow: hidden;
+
+    &--r {
+      margin-right: 64px !important;
+    }
   }
 
   &__box {
@@ -142,7 +163,7 @@
     font-size: 26px;
     line-height: 1.2;
     color: #243f4d;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     -webkit-line-clamp: 2;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -152,7 +173,7 @@
   &__box-text {
     @extend %rubik-400;
     color: #243f4d;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
     -webkit-line-clamp: 3;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -168,10 +189,12 @@
     background-color: transparent;
     color: #436372;
     line-height: 1;
+    height: 60px;
     padding: 20px 50px 20px 19px;
     @extend %rubik-500;
     font-size: 15px;
     position: relative;
+    margin-left: 5px;
 
     &::before {
       content: '';

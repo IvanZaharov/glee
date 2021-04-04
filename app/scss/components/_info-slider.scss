@@ -11,7 +11,7 @@
   &__img {
     max-width: 660px;
     height: 270px;
-    overflow: hidden;
+    object-fit: contain;
   }
 
   &__title {

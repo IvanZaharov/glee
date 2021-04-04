@@ -8,9 +8,15 @@
 
   &__logo {
     margin-right: 140px;
+    
+  }
+}
+
+.logo {
+  &__img {
     max-width: 146px;
     height: 39px;
-    overflow: hidden;
+    object-fit: contain;
   }
 }
 

@@ -39,9 +39,14 @@
     height: 170px;
     max-width: 570px;
     width: 100%;
+    padding-left: 19px;
 
     &:not(:last-child) {
       border-right: 1px solid #e8e4df;
+    }
+
+    &:last-child {
+      padding-left: 85px;
     }
   }
 

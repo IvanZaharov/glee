@@ -36,6 +36,7 @@
     font-size: 15px;
     @extend %rubik-500;
     transition: color 0.2s;
+    outline: transparent;
 
     &:hover {
       color: #000;

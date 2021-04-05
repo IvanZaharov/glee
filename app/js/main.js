@@ -1,5 +1,5 @@
 $(function () {
-  $('.info-slider').slick({
+  $('.slider-top__items').slick({
     arrows: false,
     dots: true
   });
@@ -10,7 +10,8 @@ $(function () {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000
-  })
+  });
+
 
   var mixer = mixitup('.products__items');
   var mixer = mixitup('.design__items');

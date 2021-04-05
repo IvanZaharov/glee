@@ -1,4 +1,4 @@
-.info-slider {
+.slider-top {
   &__item {
     display: flex !important;
     align-items: flex-end;
@@ -24,7 +24,7 @@
   &__img {
     max-width: 660px;
     height: 270px;
-    object-fit: contain;  
+    object-fit: contain;
     position: relative;
     z-index: 4;
   }
@@ -71,6 +71,7 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    outline: transparent;
     position: relative;
     &:hover {
       background-color: #8499a5;

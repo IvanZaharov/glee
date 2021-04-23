@@ -1,0 +1,130 @@
+.team {
+  padding-bottom: 183px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    max-width: 300px;
+  }
+
+  &__title {
+    font-size: 36px;
+    line-height: 1;
+    color: #243f4d;
+    @extend %dmsans-700;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    margin-bottom: 38px;
+    p {
+      @extend %rubik-400;
+      color: #243f4d;
+    }
+  }
+
+  &__btn {
+    display: block;
+    max-width: 170px;
+    width: 100%;
+    padding: 18px 34px 17px 0;
+    background-color: #a3bbc8;
+    color: #fff;
+    @extend %poppins-700;
+    font-size: 15px;
+    line-height: 1;
+    text-align: center;
+    position: relative;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: #5b656b;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 15px;
+      height: 11px;
+      background-image: url('../../images/team-arrow.png');
+      background-repeat: no-repeat;
+      right: 26px;
+      top: 19px;
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 100px;
+  }
+
+  &__img {
+    width: 370px;
+    height: 320px;
+    object-fit: cover;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__box {
+    position: absolute;
+    left: 0;
+    bottom: -55px;
+    background-color: #fff;
+    height: 110px;
+    width: 325px;
+    padding: 26px 0 30px 25px;
+    box-shadow: 0 5px 10px 0 rgba(211, 208, 208, 0.609);
+  }
+
+  &__box-name {
+    font-size: 22px;
+    line-height: 1;
+    color: #436372;
+    @extend %dmsans-700;
+    margin-bottom: 16px;
+  }
+
+  &__box-text {
+    color: #565872;
+    @extend %rubik-400;
+  }
+
+  &__box-socials {
+    display: flex;
+  }
+
+  &__box-link {
+    position: relative;
+    display: block;
+
+    &::after {
+      content: '';
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: 40px;
+      height: 40px;
+      background-color: #f6f6f6;
+      border-radius: 50%;
+      bottom: 15px;
+    }
+
+    &--inst::after {
+      background-image: url('../../images/inst.png');
+      left: 194px;
+    }
+
+    &--google::after {
+      background-image: url('../../images/google.png');
+      left: 242px;
+    }
+  }
+}
